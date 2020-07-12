@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0ca8414a1f191af4ead4ded31c04815b
+  m_SerializeEntries:
+  - m_GUID: 13e9922ffd81e5b4a815bfd1912a25fc
+    m_Address: UI_SucessPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6464547010725056700, guid: 13e9922ffd81e5b4a815bfd1912a25fc,
+      type: 3}
+    m_TargetAsset: {fileID: 6464547010725056700, guid: 13e9922ffd81e5b4a815bfd1912a25fc,
+      type: 3}
+  - m_GUID: 14822f197b924784795bf4ab95a544ea
+    m_Address: UI_GameHallInterface
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1a21e60896f245647b7acd6ae65b0736
+    m_Address: UI_Win_Languagenew
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1b7f5148efb6f324da36e8ed820f620b
+    m_Address: UI_SettingPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 298a2189b11041f44b25153983d5ec8e
+    m_Address: UI_Win_Language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 350124755c8e0fb459376c4096e37060
+    m_Address: UI_JoinRoomPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3e39ea83f31aed648a1cb1c5c308dcb6
+    m_Address: UI_LoginPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5858839194083f4438c73e9efee9f19c
+    m_Address: UI_Common_MidTips
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 59635b0f3a7e40f43a6c9f2ef2373d2b
+    m_Address: UI_IF_Loading
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 657adcc5e32e895498b3ffaaa8b6fe12
+    m_Address: UI_RegisterPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 789703f8e7bcdb641af92ce19d190fc0
+    m_Address: UI_Common_Alert
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 84810bf16103b6f4895c9a4ba94f5e9c
+    m_Address: UI_AboutPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8c5802fe6f0408941a33ed69658e4125
+    m_Address: UI_Common_AlertMin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e4f0d080347a5b4cadea355e1f7e74b
+    m_Address: UI_CreatRoomPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9670eb62a1adb0b49aa972ceb6fa34a1
+    m_Address: UI_GamePrepareInterface
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9996d552c16651149aef69d2e3371a41
+    m_Address: UI_GameOningPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1500897988152867802, guid: 9996d552c16651149aef69d2e3371a41,
+      type: 3}
+    m_TargetAsset: {fileID: 1500897988152867802, guid: 9996d552c16651149aef69d2e3371a41,
+      type: 3}
+  - m_GUID: a4a06f363b6a9a047945492f13c7c074
+    m_Address: UI_FailurePanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2372082646392878613, guid: a4a06f363b6a9a047945492f13c7c074,
+      type: 3}
+    m_TargetAsset: {fileID: 2372082646392878613, guid: a4a06f363b6a9a047945492f13c7c074,
+      type: 3}
+  - m_GUID: a794893582e607145836e2a18caa0ded
+    m_Address: UI_GamePrepareInterface_admin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: aacee1d04d0cceb4c81bd1e444873465
+    m_Address: UI_Pop_TextTip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c1e9facb4d7f490418f6619667cbed81
+    m_Address: UI_LC_Language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d4b1b213f0ea5824099620bc681e1c01
+    m_Address: UI_Win_GameTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e9798790fc9d68749b617aed2f6c11f0
+    m_Address: UI_MainInterface
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f6cea802bfc9d0c4997e930c4cd327a3
+    m_Address: sendmessage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fc4a0de3c634c1747814eb3ae7c6f11e
+    m_Address: UI_Common_UpTips
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 61a9a912b18e14b4aa6118521bf86701, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bc7fd8163075f9c45bdaed7f43df5030, type: 2}
+    - {fileID: 11400000, guid: d16bc589579f4264b8a0aed6215d8355, type: 2}

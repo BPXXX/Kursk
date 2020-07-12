@@ -1,0 +1,3 @@
+"id","serverIP","health_lite","health_mid","health_heavy","load_lite","load_mid","load_heavy"
+"int","string","int","int","int","int","int","int"
+"0","10.0.3.117","100","150","300","2","3","5"

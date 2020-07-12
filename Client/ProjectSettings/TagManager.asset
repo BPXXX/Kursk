@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ChatLayer
+  - LoadingLayer
+  - FullViewLayer
+  - WindowPopLayer
+  - FullViewMenuLayer
+  - TipLayer
+  - WindowLayer
+  - GuideLayer
+  - StoryLayer
+  - WindowMenuLayer
+  - Tank
+  - Wall
+  - zidan_chuanjia
+  - othertank
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 111873447
+    locked: 0
+  - name: Platforms
+    uniqueID: 3579767403
+    locked: 0
+  - name: Player
+    uniqueID: 4256459345
+    locked: 0
+  - name: Foreground
+    uniqueID: 1379371393
+    locked: 0

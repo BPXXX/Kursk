@@ -1,0 +1,7 @@
+"ID","name","baseVolume","maxCount","maxCountAction","bgm","modifyGroup","modifyVolume"
+"int","string","float","int","int","int","List<int>","List<float>"
+"1","Bgm","1","1","1","1","",""
+"2","battle","1","1","-1","0","",""
+"3","skill","1","1","-1","0","",""
+"4","ui","1","1","-1","0","",""
+"5","audio","1","1","1","0","1","0.1"

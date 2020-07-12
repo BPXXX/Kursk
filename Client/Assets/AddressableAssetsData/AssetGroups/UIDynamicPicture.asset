@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UIDynamicPicture
+  m_EditorClassIdentifier: 
+  m_GroupName: UIDynamicPicture
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 41d55e9af7d08e04cbc08379a5010799
+  m_SerializeEntries:
+  - m_GUID: 2eb10b6f8b7ea144db5d589d0d234288
+    m_Address: Head_Red
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 2eb10b6f8b7ea144db5d589d0d234288, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 2eb10b6f8b7ea144db5d589d0d234288, type: 3}
+  - m_GUID: 66f2714ea8147d34a9c0d4e377df71c5
+    m_Address: unready
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 66f2714ea8147d34a9c0d4e377df71c5, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 66f2714ea8147d34a9c0d4e377df71c5, type: 3}
+  - m_GUID: 6f47a01ed9d22c74fbcebcbba6f0a669
+    m_Address: Head_Blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 6f47a01ed9d22c74fbcebcbba6f0a669, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 6f47a01ed9d22c74fbcebcbba6f0a669, type: 3}
+  - m_GUID: 908e40f00c514e543ba3ecdd72a723b8
+    m_Address: Ready_red
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 908e40f00c514e543ba3ecdd72a723b8, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 908e40f00c514e543ba3ecdd72a723b8, type: 3}
+  - m_GUID: b87789e2019ad51429f3507769b6713d
+    m_Address: Ready_blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: b87789e2019ad51429f3507769b6713d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b87789e2019ad51429f3507769b6713d, type: 3}
+  - m_GUID: e8f6dd24b04be9d4588a331f9ef6c26e
+    m_Address: ready
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e8f6dd24b04be9d4588a331f9ef6c26e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e8f6dd24b04be9d4588a331f9ef6c26e, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 61a9a912b18e14b4aa6118521bf86701, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ea88ef92a7709204086212aee4711ee4, type: 2}
+    - {fileID: 11400000, guid: 99d3630f016fa994f8a4ed78a1d2d2f8, type: 2}

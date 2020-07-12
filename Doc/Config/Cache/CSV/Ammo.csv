@@ -1,0 +1,4 @@
+"ID","Damage","ArmorPiercing"
+"int","int","int"
+"3001","80","0"
+"3002","80","100"

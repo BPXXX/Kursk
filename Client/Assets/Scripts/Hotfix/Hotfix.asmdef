@@ -1,0 +1,12 @@
+{
+    "name": "Hotfix",
+    "references": [
+      "Skyunion",
+      "Third",
+      "Client"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true
+}

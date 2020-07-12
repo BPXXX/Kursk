@@ -1,0 +1,41 @@
+// =============================================================================== 
+// Author              :    Gen By Tools
+// Create Time         :    #DateTime#
+// Update Time         :    #DateTime#
+// Class Description   :    #ClassName#
+// Copyright IGG All rights reserved.
+// ===============================================================================
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Game {
+    public class #ClassName# : GameProxy {
+
+        #region Member
+        public const string ProxyNAME = "#ClassName#";
+
+
+
+        #endregion
+
+        // Use this for initialization
+        public #ClassName#(string proxyName)
+            : base(proxyName)
+        {
+
+        }
+        
+        public override void OnRegister()
+        {
+            Debug.Log(" #ClassName# register");   
+        }
+
+
+        public override void OnRemove()
+        {
+            Debug.Log(" #ClassName# remove");
+        }
+    }
+}

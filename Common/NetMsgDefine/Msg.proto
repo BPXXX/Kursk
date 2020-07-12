@@ -1,0 +1,300 @@
+ enum MsgType
+ {
+	 REGISTER_C2S = 1010;
+	 REGISTER_S2C = 2010;
+	 LOGIN_C2S = 1020;
+	 LOGIN_S2C = 2020;
+	 CREATE_ROOM_C2S = 1030;
+	 CREATE_ROOM_S2C = 2030;
+	 ENTER_ROOM_C2S = 1040;
+	 ENTER_ROOM_S2C = 2040;
+	 CHANGE_STATE_C2S = 1050;
+	 CHANGE_STATE_S2C = 2050;
+	 EXPEL_C2S = 1060;
+	 EXPEL_S2C = 2060;
+	 START_GAME_C2S = 1070;
+	 START_GAME_S2C = 2070;
+	 EXIT_ROOM_C2S = 1080;
+	 EXIT_ROOM_S2C = 2080;
+
+	 GET_ROOMMEN_C2S = 1090;
+	 GET_ROOMMEN_S2C = 2090;
+
+	 FANGJIANLT_C2S = 1110;
+	 FANGJIANLT_S2C = 2110;
+
+	 VEC_C2S = 1120;
+	 VEC_S2C = 2120;
+	 PickSide_C2S = 1130;
+	 PickSide_S2C = 2130;
+	 Ammo_C2S = 1140;
+	 Ammo_S2C = 2131;
+	 Damage_C2S = 2132;
+	 Damage_S2C = 2140;
+	 GetItem_S2C= 2150;
+	 Death_S2C = 2160;
+	 PointTaking = 2170;
+	 PointTaken = 2180;
+	 AddSocres = 2190;
+	 EndGame = 2191;
+	 PointDispute = 2192;
+	 RoomInfo = 2193;
+	 RoomList = 2194;
+	 RoomInfoRequest = 1170;
+	 UserInfo = 2195;
+	 UserInfoOS = 2196;
+	 VECOS = 2197;
+	 VecOsList = 2198;
+	 InfoAc = 2199;
+ };
+
+message Msg_Register_C2S
+{
+	required bytes szName = 1;
+	required bytes szPassword = 2;
+}
+message Msg_Register_S2C
+{
+	required int32 result = 1;
+}
+message Msg_Login_C2S
+{
+	required bytes szName = 1;
+	required bytes szPassword = 2;
+}
+message Msg_Login_S2C
+{
+	required int32 result = 1;
+	optional int32 id = 2;
+}
+message Msg_CreateRoom_C2S
+{
+	required int32 id = 1;
+}
+message Msg_CreateRoom_S2C
+{
+	required int32 result = 1;
+}
+message Msg_EnterRoom_C2S
+{
+	required int32 id = 1;
+}
+message Msg_EnterRoom_S2C
+{
+	required int32 result = 1;
+	optional int32 number = 2;
+	optional bytes szName = 3;
+}
+message Msg_ChangeState_C2S
+{
+	optional int32 number1 = 2;
+	optional int32 number2 = 3;
+	optional int32 type = 4;
+	optional int32 ready = 5;
+}
+message Msg_ChangeState_S2C
+{
+	required int32 result = 1;
+	optional int32 number1 = 2;
+	optional int32 number2 = 3;
+	optional int32 type = 4;
+	optional int32 ready = 5;
+}
+message Msg_Expel_C2S
+{
+	required int32 number = 1;
+	required int32 id = 2;
+	required int32 userid =3;
+}
+message Msg_Expel_S2C
+{
+	required int32 result = 1;
+	optional int32 number = 2;
+}
+message Msg_StartGame_C2S
+{
+	required int32 id = 1;
+}
+message Msg_StartGame_S2C
+{
+	required int32 result = 1;
+}
+message Msg_ExitRoom_C2S
+{
+	required int32 id = 1;
+	required int32 number = 2;
+}
+message Msg_ExitRoom_S2C
+{
+	required int32 result = 1;
+	optional int32 number = 2;
+}
+
+message Msg_GetRoomMen_C2S
+{
+	required int32 id = 1;
+}
+message Msg_GetRoomMen_S2C
+{
+	required int32 result = 1;
+	repeated int32 number = 2;
+	repeated bytes szName = 3;	
+	repeated int32 tankType = 4;
+	repeated int32 ready = 5;
+}
+
+
+message Msg_FANGJIANLT_C2S
+{
+	required bytes szContent = 1;
+	required bytes szName = 2;
+	required int32 houseid = 3;
+}
+message Msg_FANGJIANLT_S2C
+{
+	required int32 result = 1;
+	optional bytes szContent = 2;
+	optional bytes szName = 3;
+}
+message Msg_VEC_C2S
+{
+	required float x = 1;
+	required float y = 2;
+	required int32 direction = 3;
+	required int32 ingrass= 4;
+}
+message Msg_VEC_S2C
+{
+	
+	required float x = 1;
+	required float y = 2;
+	required int32 direction = 3;
+	required int32 id= 4;
+	required int32 hide= 5;
+}
+message Msg_PICKSIDE_C2S
+{
+	required int32 side = 1;	
+}
+
+message Msg_PICKSIDE_S2C
+{
+	required int32 result = 1;	
+}
+
+
+message Msg_AMMO_C2S
+{
+	required float x = 1;
+	required float y = 2;
+	required int32 direction = 3;	
+	required int32 type = 4;
+	required int32 id_shooter = 5;
+}message Msg_AMMO_S2C
+{
+	required float x = 1;
+	required float y = 2;
+	required int32 direction = 3;	
+	required int32 type = 4;
+	required int32 id = 5;
+}
+message Msg_DAMAGE_C2S
+{
+	required int32 damage = 1;	
+	required int32 id_hurt = 2;	
+		
+}
+message Msg_DAMAGE_S2C
+{
+	required int32 damage = 1;	
+	required int32 id = 2;	
+}
+message Msg_GETITEM_S2C
+{
+	required int32 kind = 1;	
+	required int32 result = 2;
+	
+}
+message Msg_DEATH_S2C
+{
+	required int32 id = 1;
+
+	
+}
+message Msg_POINTTAKING_S2C
+{
+	required int32 team = 1;
+	required int32 percent = 2;
+
+	
+}
+message Msg_POINTTAKEN_S2C
+{
+	required int32 team = 1;
+	required int32 pointnumber = 2;
+
+	
+}
+message Msg_ADDSCORES_S2C
+{
+	required int32 socres = 1;
+	required int32 id = 2;
+	
+}
+message Msg_ENDGAME_S2C
+{
+	required int32 result = 1;
+	required int32 team = 2;
+	
+}
+message Msg_POINTDESPUTE_S2C
+{
+	required int32 result = 1;
+	
+}
+message Msg_ROOMINFO_S2C
+{
+	required int32 masterid = 1;
+	required bytes masterusername = 2;
+	required int32 roomid = 3;
+	
+}
+message Msg_ROOMLIST_S2C
+{
+	repeated Msg_ROOMINFO_S2C room = 1;
+	required int32 result =2;
+	
+}
+message Msg_ROOMINFOREQUEST_C2S
+{
+	optional int32 id = 1;
+	
+}
+message Msg_USERINFO_S2C
+{
+	required int32 id = 1;
+	required bytes username = 2;
+	required int32 hp = 3;
+	required int32 type =4;
+	required int32 team =5;
+}
+message MSG_USERINFOLISTOS_S2C
+{
+    repeated Msg_USERINFO_S2C userinfo =1;
+}
+message MSG_VECOS_S2C
+{
+	required float x = 1;
+	required float y = 2;
+	required int32 direction = 3;
+	required int32 ingrass= 4;
+	required int32 id = 5;
+}
+message MSG_VECOSLIST_S2C
+{
+    repeated MSG_VECOS_S2C vec = 1;
+}
+message MSG_INFOAC_C2S
+{
+	required int32 result = 1;
+}

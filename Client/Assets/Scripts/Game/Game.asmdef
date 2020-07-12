@@ -1,0 +1,14 @@
+{
+    "name": "Game",
+    "references": [
+        "Skyunion",
+		"Third",
+        "Native",		
+        "Client",
+        "ILRTBind"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true
+}

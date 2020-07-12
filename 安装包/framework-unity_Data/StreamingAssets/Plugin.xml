@@ -1,0 +1,35 @@
+<XML App="ClientApp_Native">
+	<ClientApp_ILRT>
+		<Module Name="Skyunion.ILogService" Class="Skyunion.LogService"/>
+		<Module Name="Skyunion.INetServcice" Class="Skyunion.NetService"/>
+		<Module Name="Skyunion.IAssetService" Class="Skyunion.AddressAssetService"/>
+		<Module Name="Skyunion.IAudioService" Class="Skyunion.AudioService"/>
+		<Module Name="Skyunion.IDataService" Class="Skyunion.DataServiceBinary"/>
+		<Module Name="Skyunion.IUIManager" Class="Skyunion.UIManager"/>
+		<Module Name="Skyunion.IInputManager" Class="Skyunion.InputManager"/>
+		<Module Name="Skyunion.IHotFixService" Class="Skyunion.HotFixService_ILRT"/>
+		<Plugin Name="ClientPlugin"  Class="ClientPlugin" Assembly="Client"/>
+	</ClientApp_ILRT>
+	<ClientApp_Reflect>
+		<Module Name="Skyunion.ILogService" Class="Skyunion.LogService"/>
+		<Module Name="Skyunion.INetServcice" Class="Skyunion.NetService"/>
+		<Module Name="Skyunion.IAssetService" Class="Skyunion.AddressAssetService"/>
+		<Module Name="Skyunion.IAudioService" Class="Skyunion.AudioService"/>
+		<Module Name="Skyunion.IDataService" Class="Skyunion.DataServiceBinary"/>
+		<Module Name="Skyunion.IUIManager" Class="Skyunion.UIManager"/>
+		<Module Name="Skyunion.IInputManager" Class="Skyunion.InputManager"/>
+		<Module Name="Skyunion.IHotFixService" Class="Skyunion.HotFixService_Reflect"/>
+		<Plugin Name="ClientPlugin"  Class="ClientPlugin" Assembly="Client"/>
+	</ClientApp_Reflect>
+	<ClientApp_Native>
+		<Module Name="Skyunion.ILogService" Class="Skyunion.LogService"/>
+		<Module Name="Skyunion.INetServcice" Class="Skyunion.NetService"/>
+		<Module Name="Skyunion.IAssetService" Class="Skyunion.AddressAssetService"/>
+		<Module Name="Skyunion.IAudioService" Class="Skyunion.AudioService"/>
+		<Module Name="Skyunion.IDataService" Class="Skyunion.DataServiceBinary"/>
+		<Module Name="Skyunion.IUIManager" Class="Skyunion.UIManager"/>
+		<Module Name="Skyunion.IInputManager" Class="Skyunion.InputManager"/>
+		<Module Name="Skyunion.IHotFixService" Class="HotFixService_Native" Assembly="Native"/>
+		<Plugin Name="ClientPlugin"  Class="ClientPlugin" Assembly="Client"/>
+	</ClientApp_Native>
+</XML>

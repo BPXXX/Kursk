@@ -1,0 +1,8 @@
+"ID","language","l_languageID","telephone","enumSwitch","translate","gameID"
+"int","string","int","List<int>","int","string","string"
+"40","zh-CN","300034","40|41|6","1","zh-CN",""
+"1","ar","300035","1|42","1","ar",""
+"10","en","300036","10","1","en",""
+"22","ja","300037","22","0","ja",""
+"41","zh-TW","300038","40|41|6","0","zh-TW",""
+"37","tr","300039","37","1","tr",""

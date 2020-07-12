@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ODBCPlugin.cpp" />
+    <ClCompile Include="ODBCService.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\Common\SQLService.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ODBCQueryResult.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ODBCPlugin.h" />
+    <ClInclude Include="ODBCService.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\Common\SQLService.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\QueryResult.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ODBCQueryResult.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f04eaf9e-f933-40fe-922d-dd526ffea6ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

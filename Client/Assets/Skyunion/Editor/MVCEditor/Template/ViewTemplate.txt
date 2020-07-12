@@ -1,0 +1,60 @@
+// =============================================================================== 
+// Author              :    Gen By Tools
+// Create Time         :    #DateTime#
+// Update Time         :    #DateTime#
+// Class Description   :    #ClassName#
+// Copyright IGG All rights reserved.
+// ===============================================================================
+
+using UnityEngine;
+using UnityEngine.UI;
+using Skyunion;
+using Client;
+using Spine.Unity;
+
+namespace Game {
+    public class #ClassName# : GameView
+    {
+        public const string VIEW_NAME = "#ViewName#";
+
+        public #ClassName# () 
+        {
+        }
+        
+        public override void LoadUI(System.Action action){
+			ViewBinder.Create(VIEW_NAME,this,action);
+		}
+
+        #region gen ui code 
+#MemberUI#
+
+        private void UIFinder()
+        {
+#MemberFinder#
+            #MediatorName# mt = new #MediatorName#(vb.gameObject);
+            mt.view = this;
+            AppFacade.GetInstance().RegisterMediator(mt);
+			if(mt.IsOpenUpdate)
+			{
+                vb.fixedUpdateCallback = mt.FixedUpdate;
+                vb.lateUpdateCallback = mt.LateUpdate;
+				vb.updateCallback = mt.Update;
+			}
+            vb.openAniEndCallback = mt.OpenAniEnd;
+            vb.onWinFocusCallback = mt.WinFocus;
+            vb.onWinCloseCallback = mt.WinClose;
+            vb.onPrewarmCallback = mt.PrewarmComplete;
+        }
+
+        #endregion
+
+        public override void Start () {
+            UIFinder();
+    	}
+        public override void OnDestroy()
+        {
+            AppFacade.GetInstance().RemoveView(vb);
+        }
+
+    }
+}

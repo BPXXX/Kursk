@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log4net>
+	<!--可以自己到此网站查看如何配置，自己新增日记的保存形式-->
+	<!-- http://logging.apache.org/log4net/release/config-examples.html -->
+	<appender name="Default" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/" />
+		<appendToFile value="true" />
+		<rollingStyle value="Date" />
+		<datePattern value="'Default-'yyyy-MM-dd'.log'" />
+		<StaticLogFileName value="false" />		
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1MB" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+		</layout>
+	</appender>
+	<appender name="Unity" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/" />
+		<appendToFile value="true" />
+		<rollingStyle value="Date" />
+		<datePattern value="'Unity-'yyyy-MM-dd'.log'" />
+		<StaticLogFileName value="false" />		
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1MB" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+		</layout>
+	</appender>
+	<appender name="SDK" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/" />
+		<appendToFile value="true" />
+		<rollingStyle value="Date" />
+		<datePattern value="'SDK-'yyyy-MM-dd'.log'" />
+		<StaticLogFileName value="false" />		
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1MB" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+		</layout>
+	</appender>
+	<root>
+		<!--所有logger都会记录-->
+        <level value="DEBUG" />
+		<appender-ref ref="Default" />
+    </root>
+		<!--可以单独指定logger的日记-->
+	<logger name="Unity">
+		<level value="DEBUG" />
+		<appender-ref ref="Unity" />
+	</logger>
+</log4net>

@@ -1,0 +1,13 @@
+{
+    "name": "ILRTBind",
+    "references": [
+      "Skyunion",
+      "Third",
+      "Client",
+      "Hotfix"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true
+}

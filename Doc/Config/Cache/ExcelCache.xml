@@ -1,0 +1,156 @@
+<ExcelCache>
+    <Excel Name="Ammo" Package="Data" Vertical="false" FileName="s_Ammo.xlsm" FileSize="157939" ModifyTime="132351385578225110" Md5="21ed1e250b53a5875773ab2be3e42dff">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="Damage" Type="int" Split="" Comment="威力"/>
+        <Field Name="ArmorPiercing" Type="int" Split="" Comment="穿甲"/>
+    </Excel>
+    <Excel Name="AudioConfig3d" Package="Data" Vertical="false" FileName="s_AudioConfig3d.xlsm" FileSize="24384" ModifyTime="132351385578225110" Md5="4a114219a54c53372e6aa4fbfe852669">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="name" Type="string" Split="" Comment="组名称"/>
+        <Field Name="dopplerLevel" Type="float" Split="" Comment=""/>
+        <Field Name="minDistance" Type="float" Split="" Comment="最小距离"/>
+        <Field Name="maxDistance" Type="float" Split="" Comment="最大距离"/>
+        <Field Name="spatialBlend" Type="float" Split="" Comment=""/>
+        <Field Name="spread" Type="int" Split="" Comment=""/>
+        <Field Name="curve" Type="string" Split="" Comment=""/>
+    </Excel>
+    <Excel Name="AudioGroupInfo" Package="Data" Vertical="false" FileName="s_AudioGroupInfo.xlsm" FileSize="24813" ModifyTime="132351385578234762" Md5="b30798aa3b490281154ec0f053cb36bb">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="声音事件组ID"/>
+        <Field Name="name" Type="string" Split="" Comment="组名称"/>
+        <Field Name="baseVolume" Type="float" Split="" Comment="音量"/>
+        <Field Name="maxCount" Type="int" Split="" Comment="同时播放数"/>
+        <Field Name="maxCountAction" Type="int" Split="" Comment="同时播放上限处理"/>
+        <Field Name="bgm" Type="int" Split="" Comment="是否为背景音乐"/>
+        <Field Name="modifyGroup" Type="List&lt;int&gt;" Split="ListSpliter: &quot;|&quot;" Comment="修改的音量组"/>
+        <Field Name="modifyVolume" Type="List&lt;float&gt;" Split="ListSpliter: &quot;|&quot;" Comment="修正的音量"/>
+    </Excel>
+    <Excel Name="AudioInfo" Package="Data" Vertical="false" FileName="s_AudioInfo.xlsm" FileSize="38273" ModifyTime="132351385578244735" Md5="dbb7e0c61b265f038e859c197b7a1bab">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="声音事件ID"/>
+        <Field Name="name" Type="string" Split="" Comment="声音事件名称"/>
+        <Field Name="group" Type="int" Split="" Comment="分组"/>
+        <Field Name="mode" Type="int" Split="" Comment="播放模式"/>
+        <Field Name="maxCount" Type="int" Split="" Comment="同时播放数"/>
+        <Field Name="maxCountAction" Type="int" Split="" Comment="同时播放上限处理"/>
+        <Field Name="interval" Type="List&lt;float&gt;" Split="ListSpliter: &quot;|&quot;" Comment="间隔时间"/>
+        <Field Name="volume" Type="float" Split="" Comment="音量"/>
+        <Field Name="fadeTime" Type="float" Split="" Comment="淡出时间"/>
+        <Field Name="config3D" Type="int" Split="" Comment="3D音效"/>
+        <Field Name="audios" Type="List&lt;string&gt;" Split="ListSpliter: &quot;|&quot;" Comment="音效文件"/>
+    </Excel>
+    <Excel Name="Config" Package="Data" Vertical="true" FileName="s_Config.xlsm" FileSize="18900" ModifyTime="132351385578244735" Md5="07b3cc4526996c1f8ffe7b4916dec351">
+        <Field Name="id" Type="int" Split="" Comment="程序使用"/>
+        <Field Name="serverIP" Type="string" Split="" Comment="连接服务器的IP"/>
+    </Excel>
+    <Excel Name="Map" Package="Data" Vertical="false" FileName="s_Ditu.xlsm" FileSize="156053" ModifyTime="132352897120906714" Md5="9089770a354c4103105620a33ea6a8d0">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="Width" Type="int" Split="" Comment="地图宽度"/>
+        <Field Name="Length" Type="int" Split="" Comment="地图长度"/>
+        <Field Name="ClientDistance" Type="int" Split="" Comment="客户端间距 "/>
+        <Field Name="MapTileSize" Type="int" Split="" Comment="瓦片尺寸"/>
+        <Field Name="PointVec" Type="List&lt;Point2&gt;" Split="" Comment="据点"/>
+        <ObjectType Name="Point2">
+            <Field Name="x1" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="x坐标"/>
+            <Field Name="y1" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="y坐标"/>
+            <Field Name="x2" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="x坐标"/>
+            <Field Name="y2" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="y坐标"/>
+            <Field Name="s" Type="int" Value="" Alias="" InitValue="" Meta="" Comment="是否访问"/>
+        </ObjectType>
+    </Excel>
+    <Excel Name="Item" Package="Data" Vertical="false" FileName="s_Item.xlsm" FileSize="13958" ModifyTime="132351385578494084" Md5="f85449a9a7c2b7027e02f55d504c228a">
+        <Field Name="id" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="type" Type="int" Split="" Comment="道具类型"/>
+        <Field Name="name" Type="string" Split="" Comment="道具名称"/>
+        <Field Name="quality" Type="int" Split="" Comment="道具品质"/>
+    </Excel>
+    <Excel Name="Language" Package="Data" Vertical="false" FileName="s_Language.xlsm" FileSize="21693" ModifyTime="132351385578504385" Md5="e1716ff8868e0e0407e03161b3ffcf7d">
+        <Field Name="id" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="cn" Type="string" Split="" Comment="中文"/>
+        <Field Name="en" Type="string" Split="" Comment="英语"/>
+        <Field Name="arabic" Type="string" Split="" Comment="阿语"/>
+        <Field Name="tr" Type="string" Split="" Comment="土耳其语"/>
+    </Excel>
+    <Excel Name="LanguageSet" Package="Data" Vertical="false" FileName="s_LanguageSet.xlsm" FileSize="153822" ModifyTime="132351385578523997" Md5="25b07e939b1a50f6f0e8b5884c71bcc4">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="language" Type="string" Split="" Comment="本机语言代码"/>
+        <Field Name="l_languageID" Type="int" Split="" Comment="语言包ID"/>
+        <Field Name="telephone" Type="List&lt;int&gt;" Split="ListSpliter: &quot;|&quot;" Comment="手机默认语言编号"/>
+        <Field Name="enumSwitch" Type="int" Split="" Comment="语言开关,1=开启，0 =关闭"/>
+        <Field Name="translate" Type="string" Split="" Comment="翻译语言代码"/>
+        <Field Name="gameID" Type="string" Split="" Comment="游戏版本号"/>
+        <ObjectType Name="EunmTest">
+            <Field Name="One" Type="int" Value="1" Alias="One" InitValue="" Meta="" Comment="1"/>
+            <Field Name="Two" Type="int" Value="2" Alias="Two" InitValue="" Meta="" Comment="2"/>
+            <Field Name="Three" Type="int" Value="3" Alias="Three" InitValue="" Meta="" Comment="3"/>
+            <Field Name="Four" Type="int" Value="4" Alias="Four" InitValue="" Meta="" Comment="4"/>
+        </ObjectType>
+        <ObjectType Name="Vec2">
+            <Field Name="x" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="x坐标"/>
+            <Field Name="y" Type="float" Value="" Alias="" InitValue="" Meta="" Comment="y坐标"/>
+        </ObjectType>
+    </Excel>
+    <Excel Name="LoginConfig" Package="Data" Vertical="true" FileName="s_LoginConfig.xlsm" FileSize="19617" ModifyTime="132351385578653738" Md5="fd6984c029e11f8e486806b24050842d">
+        <Field Name="id" Type="int" Split="" Comment="程序使用"/>
+        <Field Name="serverIP" Type="string" Split="" Comment="创角登录服务器IP"/>
+        <Field Name="health_lite" Type="int" Split="" Comment="创角登录用于初始创角登陆,代表轻型坦克的血量"/>
+        <Field Name="health_mid" Type="int" Split="" Comment="创角登录用于初始创角登陆，代表中型坦克的血量"/>
+        <Field Name="health_heavy" Type="int" Split="" Comment="创角登录用于初始创角登陆，代表重型坦克的血量"/>
+        <Field Name="load_lite" Type="int" Split="" Comment="创角登录用于初始创角登陆，轻型坦克的装填时间"/>
+        <Field Name="load_mid" Type="int" Split="" Comment="创角登录用于初始创角登陆，中型坦克的装填时间"/>
+        <Field Name="load_heavy" Type="int" Split="" Comment="创角登录用于初始创角登陆，重型坦克的装填时间"/>
+    </Excel>
+    <Excel Name="StaConfig" Package="Data" Vertical="true" FileName="s_StatisticConfig.xlsm" FileSize="20871" ModifyTime="132351385579092478" Md5="8649dfcd9e72bd4444168661c0aef944">
+        <Field Name="sens_lite" Type="int" Split="" Comment="游戏参数轻型坦克动作的缓冲时间"/>
+        <Field Name="sens_mid" Type="int" Split="" Comment="游戏参数中型坦克动作的缓冲时间"/>
+        <Field Name="sens_heavy" Type="int" Split="" Comment="游戏参数重型坦克动作的缓冲时间"/>
+        <Field Name="bullet_speed" Type="int" Split="" Comment="游戏参数炮弹飞行的速度"/>
+        <Field Name="heavy_cooldown" Type="int" Split="" Comment="游戏参数召唤重型坦克的冷却时间"/>
+        <Field Name="hide_alpha" Type="int" Split="" Comment="游戏参数玩家视角中队友的坦克隐藏时的透明度"/>
+        <Field Name="expbullet_to_lite_front" Type="int" Split="" Comment="游戏参数高爆弹命中轻型坦克正面时的伤害值"/>
+        <Field Name="expbullet_to_lite_side" Type="int" Split="" Comment="游戏参数高爆弹命中轻型坦克侧面时的伤害值"/>
+        <Field Name="expbullet_to_lite_back" Type="int" Split="" Comment="游戏参数高爆弹命中轻型坦克背面时的伤害值"/>
+        <Field Name="expbullet_to_mid_front" Type="int" Split="" Comment="游戏参数高爆弹命中中型坦克正面时的伤害值"/>
+        <Field Name="expbullet_to_mid_side" Type="int" Split="" Comment="游戏参数高爆弹命中中型坦克侧面时的伤害值"/>
+        <Field Name="expbullet_to_mid_back" Type="int" Split="" Comment="游戏参数高爆弹命中中型坦克背面时的伤害值"/>
+        <Field Name="expbullet_to_heavy_front" Type="int" Split="" Comment="游戏参数高爆弹命中重型坦克正面时的伤害值"/>
+        <Field Name="expbullet_to_heavy_side" Type="int" Split="" Comment="游戏参数高爆弹命中重型坦克侧面时的伤害值"/>
+        <Field Name="expbullet_to_heavy_back" Type="int" Split="" Comment="游戏参数高爆弹命中重型坦克背面时的伤害值"/>
+        <Field Name="pierbullet_to_lite_front" Type="int" Split="" Comment="游戏参数穿甲弹命中轻型坦克正面时的伤害值"/>
+        <Field Name="pierbullet_to_lite_side" Type="int" Split="" Comment="游戏参数穿甲弹命中轻型坦克侧面时的伤害值"/>
+        <Field Name="pierbullet_to_lite_back" Type="int" Split="" Comment="游戏参数穿甲弹命中轻型坦克背面时的伤害值"/>
+        <Field Name="pierbullet_to_mid_front" Type="int" Split="" Comment="游戏参数穿甲弹命中中型坦克正面时的伤害值"/>
+        <Field Name="pierbullet_to_mid_side" Type="int" Split="" Comment="游戏参数穿甲弹命中中型坦克侧面时的伤害值"/>
+        <Field Name="pierbullet_to_mid_back" Type="int" Split="" Comment="游戏参数穿甲弹命中中型坦克背面时的伤害值"/>
+        <Field Name="pierbullet_to_heavy_front" Type="int" Split="" Comment="游戏参数穿甲弹命中重型坦克正面时的伤害值"/>
+        <Field Name="pierbullet_to_heavy_side" Type="int" Split="" Comment="游戏参数穿甲弹命中重型坦克侧面时的伤害值"/>
+        <Field Name="pierbullet_to_heavy_back" Type="int" Split="" Comment="游戏参数穿甲弹命中重型坦克背面时的伤害值"/>
+        <Field Name="smogbullet_spread" Type="int" Split="" Comment="游戏参数烟雾弹扩散的地图块数量"/>
+        <Field Name="smogbullet_time" Type="int" Split="" Comment="游戏参数烟雾弹的持续时间"/>
+        <Field Name="smogbullet_cooldown" Type="int" Split="" Comment="游戏参数烟雾弹的冷却时间"/>
+        <Field Name="exitin_cooldown" Type="int" Split="" Comment="游戏参数灭火器的冷却时间"/>
+        <Field Name="fixtool_cooldown" Type="int" Split="" Comment="游戏参数维修工具的冷却时间"/>
+        <Field Name="extin_rate" Type="int" Split="" Comment="游戏参数灭火器掉落的概率"/>
+        <Field Name="fixtool_rate" Type="int" Split="" Comment="游戏参数维修工具掉落的概率"/>
+        <Field Name="smogbullet_rate" Type="int" Split="" Comment="游戏参数烟雾弹掉落的概率"/>
+        <Field Name="medp_rate" Type="int" Split="" Comment="游戏参数医疗工具掉落的概率"/>
+        <Field Name="fired_ratio" Type="int" Split="" Comment="游戏参数坦克被高爆弹击中后“着火”的概率"/>
+        <Field Name="fired_power" Type="int" Split="" Comment="游戏参数坦克“着火”时，每秒钟减少的血量"/>
+        <Field Name="fired_time" Type="int" Split="" Comment="游戏参数“着火”状态的持续时间"/>
+        <Field Name="shutdown_rate" Type="int" Split="" Comment="游戏参数坦克“零件损毁”时，缓冲时间和装填时间上升的倍率"/>
+        <Field Name="shutdown_power" Type="int" Split="" Comment="游戏参数坦克被穿甲弹击中后“零件损毁”的概率"/>
+    </Excel>
+    <Excel Name="Tank" Package="Data" Vertical="false" FileName="s_Tank.xlsm" FileSize="156472" ModifyTime="132351385579302103" Md5="2a97d10ffe9e1ec228dbb1ff6a429e9d">
+        <Field Name="ID" Type="int" Split="RepeatCheck:true MakeIndex:true" Comment="编号"/>
+        <Field Name="HP" Type="int" Split="" Comment="最大血量"/>
+        <Field Name="Armor_front" Type="int" Split="" Comment=" 车前护甲值"/>
+        <Field Name=" Armor_side" Type="int" Split="" Comment=" 侧身护甲值 "/>
+        <Field Name=" Armor_back" Type="int" Split="" Comment="背面护甲值"/>
+        <Field Name=" Mag" Type="string" Split="" Comment="炮弹种类"/>
+        <Field Name="TankKind" Type="string" Split="" Comment="坦克类型"/>
+        <Field Name="TankSerial" Type="string" Split="" Comment=" 坦克系列"/>
+        <Field Name="Speed" Type="int" Split="" Comment=" 坦克速度"/>
+        <Field Name="MaxItem" Type="List&lt;int&gt;" Split="ListSpliter: &quot;|&quot;" Comment="道具携带数 "/>
+        <Field Name="ShootGap" Type="int" Split="" Comment=" 射击僵直"/>
+        <Field Name=" MoveGap" Type="int" Split="" Comment="移动僵直"/>
+        <Field Name="ReloadGap" Type="int" Split="" Comment="装填时间"/>
+    </Excel>
+</ExcelCache>

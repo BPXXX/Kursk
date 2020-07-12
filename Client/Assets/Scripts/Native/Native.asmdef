@@ -1,0 +1,11 @@
+{
+    "name": "Native",
+    "references": [
+        "Skyunion",
+		"Hotfix"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true
+}

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scence
+  m_EditorClassIdentifier: 
+  m_GroupName: Scence
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4a70cede76487344ca7e67d57026362e
+  m_SerializeEntries:
+  - m_GUID: 0a3946f8506f9734b9b9310e33d8c009
+    m_Address: map_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1380869d801d374489862e3ab0feb11f
+    m_Address: tank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 16de6592a25c40d449bc6e6471acd282
+    m_Address: chuanjia_l
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 39b2a6b9b41ef9448b6c890a8f3b970a
+    m_Address: chuanjia_r
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 40afba9a9623c904193e8ed874594215
+    m_Address: othertank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2606636538427452821, guid: 40afba9a9623c904193e8ed874594215,
+      type: 3}
+    m_TargetAsset: {fileID: 2606636538427452821, guid: 40afba9a9623c904193e8ed874594215,
+      type: 3}
+  - m_GUID: 4ce33cfeb8343d7478e0bfca5fd87b73
+    m_Address: gaobao_r
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 72b74e46fda035f4da7d85c2ffe186ab
+    m_Address: scenes_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b1235595fffba3f418c391154b673b25
+    m_Address: chuanjia_u
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b3f7f23682b747743ac21c208289c377
+    m_Address: gaobao_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ba1809dc3363b7343aa77cfa1f21f1ef
+    m_Address: gaobao_l
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c7e10947296a1844b8d87819ac09b657
+    m_Address: gaobao_u
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e335d43bec3e4a34cb4fee56f39bb3cc
+    m_Address: chuanjia_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 61a9a912b18e14b4aa6118521bf86701, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4c22865fb0681e5458911cb3aa11b68d, type: 2}
+    - {fileID: 11400000, guid: 6e268838188665845884e0bf77b03a95, type: 2}

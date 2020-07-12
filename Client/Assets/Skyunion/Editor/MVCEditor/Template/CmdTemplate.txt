@@ -1,0 +1,21 @@
+// =============================================================================== 
+// Author              :    Gen By Tools
+// Create Time         :    #DateTime#
+// Update Time         :    #DateTime#
+// Class Description   :    #ClassName#
+// Copyright IGG All rights reserved.
+// ===============================================================================
+
+using UnityEngine;
+using PureMVC.Patterns;
+
+namespace Game {
+    public class #ClassName# : GameCmd
+    {
+        public override void Execute(string notificationName, object body = null, string notiType = null)
+        {
+            //Log.Info("Execute #ClassName#");
+           
+        }
+    }
+}

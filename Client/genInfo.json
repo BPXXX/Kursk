@@ -1,0 +1,135 @@
+{
+	"423c91c342930c341a2b8806719a189c":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/UILanguage/UI_Win_LanguageNew.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/LanguageNew/UI_Win_LanguageNewView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/LanguageNew/UI_Win_LanguageNewMediator.cs",
+		"GUID":"423c91c342930c341a2b8806719a189c"
+	},
+	"52d5e0656752b9d4a810b1798d10623d":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/UICommon/UI_chooseroom.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/roomUItest/UI_chooseroomView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/roomUItest/UI_chooseroomMediator.cs",
+		"GUID":"52d5e0656752b9d4a810b1798d10623d"
+	},
+	"90f80fcc547bb1c438ae00260aad5e4d":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/UICommon/UI_Model_Windowtest.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/UI_Model_WindowtestView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/UI_Model_WindowtestMediator.cs",
+		"GUID":"90f80fcc547bb1c438ae00260aad5e4d"
+	},
+	"1a21e60896f245647b7acd6ae65b0736":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/UILanguage/UI_Win_Languagenew.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/UI_Win_LanguagenewView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/UI_Win_LanguagenewMediator.cs",
+		"GUID":"1a21e60896f245647b7acd6ae65b0736"
+	},
+	"f6cea802bfc9d0c4997e930c4cd327a3":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/test/sendmessage.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/sendmessageView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Test/sendmessageMediator.cs",
+		"GUID":"f6cea802bfc9d0c4997e930c4cd327a3"
+	},
+	"e9798790fc9d68749b617aed2f6c11f0":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_MainInterface.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_MainInterfaceView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_MainInterfaceMediator.cs",
+		"GUID":"e9798790fc9d68749b617aed2f6c11f0"
+	},
+	"3e39ea83f31aed648a1cb1c5c308dcb6":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_ LoginPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/Login/UI_ LoginPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/Login/UI_ LoginPanelMediator.cs",
+		"GUID":"3e39ea83f31aed648a1cb1c5c308dcb6"
+	},
+	"657adcc5e32e895498b3ffaaa8b6fe12":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_RegisterPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_RegisterPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_RegisterPanelMediator.cs",
+		"GUID":"657adcc5e32e895498b3ffaaa8b6fe12"
+	},
+	"84810bf16103b6f4895c9a4ba94f5e9c":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_AboutPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_AboutPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_AboutPanelMediator.cs",
+		"GUID":"84810bf16103b6f4895c9a4ba94f5e9c"
+	},
+	"14822f197b924784795bf4ab95a544ea":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_GameHallInterface.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GameHallInterfaceView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GameHallInterfaceMediator.cs",
+		"GUID":"14822f197b924784795bf4ab95a544ea"
+	},
+	"8e4f0d080347a5b4cadea355e1f7e74b":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_CreatRoomPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_CreatRoomPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_CreatRoomPanelMediator.cs",
+		"GUID":"8e4f0d080347a5b4cadea355e1f7e74b"
+	},
+	"350124755c8e0fb459376c4096e37060":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_JoinRoomPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_JoinRoomPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_JoinRoomPanelMediator.cs",
+		"GUID":"350124755c8e0fb459376c4096e37060"
+	},
+	"9670eb62a1adb0b49aa972ceb6fa34a1":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_GamePrepareInterface.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/UI_GamePrepareInterfaceView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/UI_GamePrepareInterfaceMediator.cs",
+		"GUID":"9670eb62a1adb0b49aa972ceb6fa34a1"
+	},
+	"a794893582e607145836e2a18caa0ded":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_GamePrepareInterface_admin.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GamePrepareInterface_adminView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GamePrepareInterface_adminMediator.cs",
+		"GUID":"a794893582e607145836e2a18caa0ded"
+	},
+	"298a2189b11041f44b25153983d5ec8e":{
+		"type":1,
+		"prefabPath":"Assets/BundleAssets/UI/UIPrefabs/UILanguage/UI_Win_Language.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Language/UI_Win_LanguageView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Language/UI_Win_LanguageMediator.cs",
+		"GUID":"298a2189b11041f44b25153983d5ec8e"
+	},
+	"1b7f5148efb6f324da36e8ed820f620b":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_SettingPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_SettingPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_SettingPanelMediator.cs",
+		"GUID":"1b7f5148efb6f324da36e8ed820f620b"
+	},
+	"9996d552c16651149aef69d2e3371a41":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_GameOningPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GameOningPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_GameOningPanelMediator.cs",
+		"GUID":"9996d552c16651149aef69d2e3371a41"
+	},
+	"13e9922ffd81e5b4a815bfd1912a25fc":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_SucessPanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_SucessPanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_SucessPanelMediator.cs",
+		"GUID":"13e9922ffd81e5b4a815bfd1912a25fc"
+	},
+	"a4a06f363b6a9a047945492f13c7c074":{
+		"type":1,
+		"prefabPath":"Assets/Battle of Kursk/UIPrefabs/PanelPrefabs/UI_FailurePanel.prefab",
+		"codePath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_FailurePanelView.cs",
+		"mediatorPath":"Assets/Scripts/Hotfix/MVC/View_Mediator/Battle of Kursk/UI_FailurePanelMediator.cs",
+		"GUID":"a4a06f363b6a9a047945492f13c7c074"
+	}
+}

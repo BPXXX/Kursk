@@ -1,0 +1,11 @@
+{
+    "name": "Client",
+    "references": [
+        "Skyunion",
+		"Third"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true
+}

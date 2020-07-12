@@ -1,0 +1,6 @@
+"ID","name","dopplerLevel","minDistance","maxDistance","spatialBlend","spread","curve"
+"int","string","float","float","float","float","int","string"
+"1","default","0","1","90","1","0",""
+"2","env_sound","0","1","22.5","1","0","env_sound"
+"3","troop_sound","0","1","45","0.95","0","troop_sound"
+"4","fog_clear","0","1","150","0.98","0","fog_clear"

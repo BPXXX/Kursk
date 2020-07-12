@@ -1,0 +1,41 @@
+// =============================================================================== 
+// Author              :    Gen By Tools
+// Create Time         :    #DateTime#
+// Update Time         :    #DateTime#
+// Class Description   :    #ClassName#
+// Copyright IGG All rights reserved.
+// ===============================================================================
+
+using UnityEngine;
+using UnityEngine.UI;
+using Skyunion;
+using Client;
+
+namespace Game {
+    public class #ClassName# : GameView
+    {
+		public const string VIEW_NAME = "#ViewName#";
+
+        public #ClassName# () 
+        {
+        }
+
+        #region gen ui code 
+#MemberUI#
+
+        private void UIFinder(GameObject obj)
+        {
+            this.vb = ViewBinder.Create(obj);
+            this.gameObject = obj;            
+#MemberFinder#
+
+        }
+
+        #endregion
+
+        public override void BindSingleUI(GameObject obj) {
+           UIFinder(obj);
+    	}
+
+    }
+}

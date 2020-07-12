@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<allconfigs>
+	<!-- config3d: curve(volume curve key in CustomAudioCurves) -->
+	<config3d>
+		<config name="default" dopplerLevel="0" minDistance="1" maxDistance="90" spatialBlend="1" spread="0"/>
+		<config name="env_sound" dopplerLevel="0" minDistance="1" maxDistance="22.5" spatialBlend="1.0" spread="0" curve="env_sound"/>
+		<config name="troop_sound" dopplerLevel="0" minDistance="1" maxDistance="45" spatialBlend="0.95" spread="0" curve="troop_sound"/>
+		<config name="fog_clear" dopplerLevel="0" minDistance="1" maxDistance="150" spatialBlend="0.98" spread="0" curve="fog_clear"/>
+	</config3d>
+
+	<!-- group: name baseVolume(1.0) maxCount(-1, num) maxCountAction(stop, noplay) bgm(true, false) sfx(true, false) -->
+	<!--   modify: modify group volume -->
+	<!--   audio: name mode(normal, list, random) audios(a1,a2) maxCount(-1, num)  maxCountAction(stop, noplay) 
+	       interval(interval="15" or interval="15,20"), 
+	       fadeInTime(xxx), config3d("default", xxx)key in config3d 
+	       channelKey: channel key in CSAudioMgr.AllChannels
+	       channel: channel 0 audios, channel 1 audios, xxx
+	-->
+	<groups>
+		<group name="bgm" baseVolume="1.0" maxCount="-1" maxCountAction="stop" bgm="true">
+			<modify group="ambient" volume="0.5"/>
+			<!-- <audio name="bgm_peace" mode="random" interval="3" fadeInTime="2" channelKey="bgm"> -->
+				<!-- <channel audios="bgm_peace_day1,bgm_peace_day2"/> -->
+				<!-- <channel audios="bgm_peace_night1,bgm_peace_night2"/> -->
+			<!-- </audio> -->
+			<audio name="bgm_peace_day" mode="normal" fadeInTime="1"/>
+			<audio name="bgm_peace_night" mode="normal" fadeInTime="1"/>
+			<audio name="bgm_peace_day_lostland" mode="normal" fadeInTime="1"/>
+			<audio name="bgm_peace_night_lostland" mode="normal" fadeInTime="1"/>
+			<audio name="bgm_combat_pve" mode="normal" maxCount="1" maxCountAction="noplay" fadeInTime="1"/>
+			<audio name="bgm_combat_large_battle" mode="normal" maxCount="1" maxCountAction="noplay" fadeInTime="1"/>
+			<audio name="bgm_env_day" mode="random" audios="bgm_env_day1" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+			<audio name="bgm_env_air" mode="random" audios="bgm_env_air1" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+			<audio name="bgm_env_night" mode="random" audios="bgm_env_night1" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+
+			<audio name="bgm_rome" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_other" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_germany" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_britain" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_france" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_spain" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_china" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_japan" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_korea" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_byzantine" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_arab" mode="normal" interval="1,2" fadeInTime="1"/>
+			<audio name="bgm_ottoman_turks" mode="normal" interval="1,2" fadeInTime="1"/>
+			<!-- <audio name="bgm_peace_day" mode="random" audios="bgm_peace_day1,bgm_peace_day2" interval="5,10" fadeInTime="5"/> -->
+			<!-- <audio name="bgm_peace_night" mode="random" audios="bgm_peace_night1,bgm_peace_night2" interval="5,10" fadeInTime="5"/> -->
+			<audio name="bgm_warcomming" mode="random" audios="bgm_warcomming1,bgm_warcomming2" interval="5,10" fadeInTime="5"/>
+
+			<!-- <audio name="bgm_main_title_theme" mode="random" audios="bgm_main_title_theme1,bgm_main_title_theme2" interval="15" fadeInTime="5"/> -->
+		</group>
+		<group name="world" baseVolume="1.0" maxCount="-1" maxCountAction="noplay" sfx="true">
+			<audio name="sfx_fight_warriors" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_move_warriors" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_move_catapults" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_sword" mode="random" audios="sfx_fight_sword1,sfx_fight_sword2,sfx_fight_sword3" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_swordwall" mode="random" audios="sfx_fight_sword1,sfx_fight_sword2,sfx_fight_sword3,sfx_fight_swordwall,sfx_fight_swordwall,sfx_fight_swordwall" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_arrow" mode="random" audios="sfx_fight_arrow1,sfx_fight_arrow2" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_tower" mode="random" audios="sfx_fight_tower,sfx_fight_tower2" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_weapon_catapult" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_bigarrow" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_firecatapult" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_mallet" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_malletwall" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fight_slinger" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_hero" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_knights" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_mix" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_mix2" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_mix3" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_scout" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_sieges" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_march_warriors" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_combat_large_battle_over" audios="sfx_combat_large_battle_over" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_combat_pve_over" mode="normal" audios="sfx_combat_pve_over" maxCount="1" maxCountAction="noplay"/>
+			<audio name="vo_onfight" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_flag_move" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_building_move" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fog_clear" mode="normal" maxCount="2" maxCountAction="noplay" config3d="fog_clear"/>
+			<audio name="sfx_battle_win" mode="normal" maxCount="2" maxCountAction="noplay" config3d="troop_sound"/>
+			<audio name="sfx_spell_arrowrain" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_burst" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_charge" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_fireball" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_getbuff" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_heal" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_iceball" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_spell_impact" mode="normal" maxCount="2" maxCountAction="noplay"/>
+		</group>
+		<group name="ui" baseVolume="1.0" maxCount="-1" maxCountAction="noplay" sfx="true">
+			<audio name="sfx_alert_newmail" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_item" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="casino_single" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_exp_increase_loop" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="casino_short" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_slide_loop" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_hero_upstar" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_fx_gift_lvup" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_gift_lvup_long" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_hero_lvup" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_mail_remind" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_shop_refresh" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_skill_lvup" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_fall" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_lvup" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_raise" mode="normal" maxCount="2" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_three" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_fx_star_two" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_food_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_food_less" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_food_alot" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_wood_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_wood_less" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_wood_alot" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_stone_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_stone_less" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_stone_alot" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_coin_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_coin_less" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_coin_alot" mode="normal" maxCount="1" maxCountAction="noplay"/>			  
+			<audio name="sfx_collect_gem_one" mode="normal" maxCount="1" maxCountAction="noplay"/>
+			<audio name="sfx_collect_gem_alot" mode="normal" maxCount="1" maxCountAction="noplay"/>
+
+		</group>		
+		<group name="map_select" baseVolume="1.0" maxCount="1" maxCountAction="stop" sfx="true">
+			<audio name="sfx_select_fallcity" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_farm" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_wood" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_stone" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_goldmine" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_gemmine" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_village" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_cave" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_barfortress" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_fort" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_wonder" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_superwonder" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sfx_select_flag" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_select_owntroop" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_select_nontroop" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_select_bar" mode="random" audios="vo_select_bar1,vo_select_bar2" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_select_scout" mode="normal" maxCount="-1" maxCountAction="stop"/>
+		</group>
+		<group name="enviroment" baseVolume="1.0" maxCount="-1" maxCountAction="stop" sfx="true">
+			<audio name="sfx_env_day" mode="random" audios="sfx_env_bird1,sfx_env_bird2,sfx_env_bird3,sfx_env_animal" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+			<audio name="sfx_env_air" mode="random" audios="sfx_env_wind" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+			<audio name="sfx_env_night" mode="random" audios="sfx_env_torch,sfx_env_torch,sfx_env_insect" maxCount="1" maxCountAction="noplay" interval="3,8" fadeInTime="1"/>
+			<audio name="sfx_flameout" mode="normal" maxCount="2" maxCountAction="noplay"/>
+		</group>
+		<group name="env_sound" baseVolume="1.0" maxCount="-1" maxCountAction="stop" sfx="true">
+			<audio name="sfx_env_river" mode="normal" maxCount="1" maxCountAction="noplay" config3d="env_sound"/>
+			<audio name="sfx_env_waterfall" mode="normal" maxCount="-1" maxCountAction="noplay" config3d="env_sound"/>
+		</group>
+		<group name="vo_order" baseVolume="1.0" maxCount="1" maxCountAction="stop" sfx="true">
+			<audio name="vo_order_troop" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_order_scout" mode="normal" maxCount="-1" maxCountAction="stop"/>
+		</group>
+		<group name="city_fall" baseVolume="1.0" maxCount="1" maxCountAction="noplay" sfx="true">
+			<audio name="bgm_cityfall_winner" mode="normal"/>
+			<audio name="bgm_cityfall_failure" mode="normal"/>
+		</group>
+		<group name="ambient" baseVolume="1.0" maxCount="-1" maxCountAction="noplay" sfx="true">
+			<audio name="sfx_amb_desert_a" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_desert_b" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_lake" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_river" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_close_a" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_close_b" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_close_c" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+
+			<audio name="sfx_amb_field_close_night_a" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_close_night_b" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_close_night_c" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+
+			<audio name="sfx_amb_field_mid_a" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_mid_b" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_mid_c" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+
+			<audio name="sfx_amb_castle_night_a" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_night_b" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_night_c" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+
+			<!-- <audio name="sfx_amb_tactical_day" mode="normal" audios="sfx_amb_field_close_a,sfx_amb_field_close_b,sfx_amb_field_close_c" maxCount="1" maxCountAction="noplay" fadeInTime="2"/> -->
+			<!-- <audio name="sfx_amb_tactical_night" mode="random" audios="sfx_amb_field_close_night_a,sfx_amb_field_close_night_b,sfx_amb_field_close_night_c" maxCount="1" maxCountAction="noplay" fadeInTime="2"/> -->
+
+			<!-- <audio name="sfx_amb_tactical_strategy_day" mode="random" audios="sfx_amb_field_mid_a,sfx_amb_field_mid_b,sfx_amb_field_mid_c" maxCount="1" maxCountAction="noplay" fadeInTime="2"/> -->
+
+			<audio name="sfx_amb_field_mid_night" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_far" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_field_far_night" mode="normal" maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_stoneage" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_bronzeage" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_ironage" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_darkage" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_amb_castle_feudalage" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<audio name="sfx_env_rain" mode="normal"  maxCount="-1" maxCountAction="noplay" fadeInTime="8"/>
+			<!-- <audio name="sfx_amb_castle_night" mode="random" audios="sfx_amb_castle_night_a,sfx_amb_castle_night_b,sfx_amb_castle_night_c" maxCount="-1" maxCountAction="noplay" fadeInTime="2"/> -->
+		</group>
+		<group name="castle_battle_ui" baseVolume="1.0" maxCount="-1" maxCountAction="noplay" sfx="true">
+			<modify group="bgm" volume="0.7"/>
+			<audio name="sfx_battle_win_UI" mode="normal"/>
+			<audio name="sfx_battle_failed_UI" mode="normal"/>
+		</group>
+		<group name="fte_vfx" baseVolume="1.0" maxCount="1" maxCountAction="stop" sfx="true">
+			<modify group="bgm" volume="0.6"/>
+			<audio name="vo_welcome_desc" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_01_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_02_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_02_advisor_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_03_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_04_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_01_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_05_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_06_villager" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_06_villager_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_02_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_07_barbarian" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_08_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_09_barbarian" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_03_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_10_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_11_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_12_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_13_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_04_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_05_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_15_01_barbarian" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_06_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_16_centurion" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_17_barbarian" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_05_commander_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_18_barbarian" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_20_centurion" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_21_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_dialogue_22_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hint_08_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_quest_01_dialogue1_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_quest_01_dialogue2_scout" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_quest_01_hint3_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_quest_01_hint4_scout" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_quest_01_dialogue5_advisor" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_CLEAN_SPACE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_CLEAN_SPACE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_BARBARIAN_LEVEL_RULE" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_speedup_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_speedup_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_RESOURCE_POINT_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_RESOURCE_POINT_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_STONE_TECH_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_STONE_TECH_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GOLD_TECH_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GOLD_TECH_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GEM_TECH_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GEM_TECH_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_PLAYER_CITY_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_PLAYER_CITY_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDER_TALENT_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDER_TALENT_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDER_TALENT_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_04" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_05" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_06" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_07" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ENTER_NEW_AGE_08" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_5_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_5_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_6_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_6_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_7_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_7_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_8_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_8_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_9_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TOWNHALL_9_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WILL_ENTER_NEW_AGE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WILL_ENTER_NEW_AGE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_STORAGE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_STORAGE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_BUILDER_HUT_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_BUILDER_HUT_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCECENTER_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TRADING_POST_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_TRADING_POST_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_CASTLE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_CASTLE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ACADEMY_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WHAT_IS_POWER_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WHAT_IS_POWER_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_02_HINT" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_03_HINT" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_04_HINT" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_05" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_TELEPORT_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_TELEPORT_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_TELEPORT_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WATCHTOWER_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WATCHTOWER_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WATCHTOWER_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WALL_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WALL_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WALL_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_WALL_04" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_BARBARIANFORT_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_BARBARIANFORT_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ITEMS_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ITEMS_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSTAR_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSTAR_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSTAR_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSKILL_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSKILL_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_COMMANDERSKILL_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_PICKALL01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_PICKALL02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_SCENARIO_PICKALL03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GRADE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_LOSEBATTLE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_LOSEBATTLE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_LOSEBATTLE_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_DANGEROUS_MARCH_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_DANGEROUS_MARCH_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GUARDIAN_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GUARDIAN_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_GUARDIAN_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_RUNE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_RUNE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_RES_DEPOSITE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_RES_DEPOSITE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_FORTRESS_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_FORTRESS_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_FORTRESS_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_FLAG_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ALLIANCE_FLAG_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_HOLYSITE_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_HOLYSITE_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_HOLYSITE_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_PASS_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_PASS_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_PASS_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ATTACK_CITY_01" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ATTACK_CITY_02" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="TUTOR_ATTACK_CITY_03" mode="normal" maxCount="-1" maxCountAction="stop"/>
+
+			<audio name="Julius_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Julius_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Julius_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Julius_skill04_en_ALT" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sun_tzu_vo01_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sun_tzu_vo02_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sun_tzu_vo03_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="sun_tzu_vo04_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Friedrich_skill01_de_ALT001" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Friedrich_skill02_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Friedrich_skill03_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Friedrich_skill04_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Yi_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Yi_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Yi_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Yi_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="caocao_vo01_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="caocao_vo02_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="caocao_vo03_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="caocao_vo04_cn" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Richard_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Richard_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Richard_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Richard_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Minamoto_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Minamoto_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Minamoto_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Minamoto_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Charles_skill01_en_ALT4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Charles_skill02_en_ALT4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Charles_skill03_en_ALT1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Charles_skill04_en_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="El_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="El_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="El_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="El_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hermann_skill01_de_ALT002" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hermann_skill02_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hermann_skill03_de_ALT002" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hermann_skill04_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Kusunoki_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Kusunoki_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Kusunoki_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Kusunoki_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Scipio_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Scipio_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Scipio_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Scipio_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Joan_skill01_en_ALT1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Joan_skill02_en_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Joan_skill03_en_ALT1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Joan_skill04_en_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Eulji_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Eulji_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Eulji_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Eulji_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Boudica_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Boudica_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Boudica_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Boudica_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Pelagius_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Pelagius_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Pelagius_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Pelagius_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="City_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="City_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="City_skill03_en_alt" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="City_skill04_en_alt" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Markswoman_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Markswoman_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Markswoman_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Markswoman_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Centurion_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Centurion_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Centurion_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Centurion_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Dragoon_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Dragoon_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Dragoon_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Dragoon_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hannibal_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hannibal_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hannibal_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Hannibal_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Constance_skill01_de" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Constance_skill02_de_ALT002" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Constance_skill03_de_ALT002" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Constance_skill04_de_ALT001" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Gaius_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Gaius_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Gaius_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Gaius_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Tomoe_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Tomoe_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Tomoe_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Tomoe_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lancelot_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lancelot_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lancelot_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lancelot_skill04_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lohar_skill01_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lohar_skill02_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lohar_skill03_en" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Lohar_skill04_en_alt" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Sarka_skil01_cz_alt3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Sarka_skil02_cz_alt2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Sarka_skil03_cz_alt6" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="Sarka_skil04_cz_alt4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="belisarius_vo1_latin_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="belisarius_vo2_latin_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="belisarius_vo3_latin" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="belisarius_vo4_latin_ALT" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="cleopatra_vo1_arabic_ALT4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="cleopatra_vo2_arabic_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="cleopatra_vo3_arabic_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="cleopatra_vo4_arabic_ALT1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="constantine_vo1_latin_ALT5" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="constantine_vo2_latin" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="constantine_vo3_latin_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="constantine_vo4_latin" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="mehmed_vo1_turkish" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="mehmed_vo2_turkish" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="mehmed_vo3_turkish" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="mehmed_vo4_turkish_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="osman_vo1_turkish_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="osman_vo2_turkish_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="osman_vo3_turkish" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="osman_vo4_turkish_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="saladin_vo1_arabic_ALT4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="saladin_vo2_arabic" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="saladin_vo3_arabic_ALT3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="saladin_vo4_arabic_ALT6" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Baibars_1_ALT_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Baibars_2_ALT_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Baibars_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Baibars_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Cleopatra_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Cleopatra_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Cleopatra_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Cleopatra_4_ALT2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Seondeok_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Seondeok_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Seondeok_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Seondeok_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_huamulan_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_huamulan_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_huamulan_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_huamulan_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_wuzetian_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_wuzetian_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_wuzetian_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_wuzetian_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_aethelfaed_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_aethelfaed_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_aethelfaed_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_aethelfaed_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_AlexanderTheGreat_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_AlexanderTheGreat_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_AlexanderTheGreat_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_AlexanderTheGreat_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Charlemagne_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Charlemagne_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Charlemagne_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Charlemagne_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Tomyris_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Tomyris_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Tomyris_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_Tomyris_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_EdwardTheBlackPrince_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_EdwardTheBlackPrince_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_EdwardTheBlackPrince_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_EdwardTheBlackPrince_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_GenghisKhan_1" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_GenghisKhan_2" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_GenghisKhan_3" mode="normal" maxCount="-1" maxCountAction="stop"/>
+			<audio name="vo_hero_GenghisKhan_4" mode="normal" maxCount="-1" maxCountAction="stop"/>
+		</group>
+	</groups>
+</allconfigs>
